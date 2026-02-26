@@ -1,0 +1,7 @@
+tunnel: 3a5ec1fb-64ad-4b8a-a5a3-902cd6761ecb
+credentials-file: /home/iluminatto/.cloudflared/3a5ec1fb-64ad-4b8a-a5a3-902cd6761ecb.json
+
+ingress:
+  - hostname: barbearia.superzap.fun
+    service: http://localhost:8000
+  - service: http_status:404
