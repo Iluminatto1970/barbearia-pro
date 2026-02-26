@@ -1,5 +1,26 @@
 <?php
 if (!defined('SAAS_ADMIN_APP')) {
+    if (isset($_GET['action']) && $_GET['action'] === 'check_ngrok') {
+        header('Content-Type: text/plain');
+        $tunnelFiles = [
+            __DIR__ . '/../tunnels/superadm.yml',
+            '/home/iluminatto/.cloudflared/config.yml'
+        ];
+        
+        foreach ($tunnelFiles as $file) {
+            if (file_exists($file)) {
+                $content = file_get_contents($file);
+                preg_match('/hostname:\s*(.+)/', $content, $match);
+                if (isset($match[1])) {
+                    $hostname = trim($match[1]);
+                    echo 'https://' . $hostname;
+                    exit;
+                }
+            }
+        }
+        echo '';
+        exit;
+    }
     exit;
 }
 
@@ -273,6 +294,96 @@ function dashboard_badge($ativo, $assinatura)
     <a class="shortcut-item" href="?page=planos"><i class="fa fa-layer-group text-info"></i> Ajustar planos e limites</a>
     <a class="shortcut-item" href="?page=tuneis"><i class="fa fa-network-wired text-warning"></i> Monitorar tuneis</a>
 </div>
+
+<div class="panel-card mb-4">
+    <header class="box-head">
+        <h3><i class="fa fa-terminal mr-2"></i>Acesso SSH via Ngrok</h3>
+        <span class="badge bg-warning" id="ngrok-status"><i class="fa fa-sync fa-spin"></i> Verificando...</span>
+    </header>
+    <div class="box-body p-3">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-link"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="ngrok-url" readonly placeholder="Aguardando conexão...">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" onclick="copyNgrokUrl()" id="btn-copy">
+                            <i class="fa fa-copy"></i> Copiar
+                        </button>
+                    </div>
+                </div>
+                <small class="text-muted mt-1 d-block">
+                    <i class="fa fa-info-circle"></i> Comando SSH: <code id="ssh-command">ssh iluminatto@... -p 22</code>
+                </small>
+            </div>
+            <div class="col-md-4 text-right">
+                <div class="text-muted small" id="last-check">
+                    <i class="fa fa-clock"></i> Última verificação: --
+                </div>
+                <div class="text-success small" id="link-status">
+                    <i class="fa fa-check-circle"></i> Link ativo
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let ngrokUrl = '';
+let checkInterval = null;
+
+async function checkNgrokUrl() {
+    try {
+        const response = await fetch('?page=dashboard&action=check_ngrok', {
+            method: 'GET',
+            cache: 'no-cache'
+        });
+        const text = await response.text();
+        
+        const match = text.match(/(https?:\/\/[a-zA-Z0-9\-\.]+)/);
+        
+        if (match && match[1] !== ngrokUrl) {
+            ngrokUrl = match[1];
+            document.getElementById('ngrok-url').value = ngrokUrl;
+            document.getElementById('ssh-command').textContent = 'ssh iluminatto@' + ngrokUrl.replace(/https?:\/\//, '') + ' -p 22';
+            document.getElementById('link-status').innerHTML = '<i class="fa fa-check-circle text-success"></i> Link atualizado!';
+            
+            if (ngrokUrl) {
+                new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2teleVoYAH+a2teleVoYAH+a2teleVoYAH+a2teleVoYAH+a2teleVoYAH+a2teleVoYAH+a2teleVoYAA==').play().catch(() => {});
+            }
+        }
+        
+        document.getElementById('last-check').innerHTML = '<i class="fa fa-clock"></i> Última verificação: ' + new Date().toLocaleTimeString();
+        document.getElementById('ngrok-status').innerHTML = '<span class="badge bg-success"><i class="fa fa-wifi"></i> Online</span>';
+        
+    } catch (e) {
+        document.getElementById('ngrok-status').innerHTML = '<span class="badge bg-danger"><i class="fa fa-exclamation-triangle"></i> Erro</span>';
+        document.getElementById('link-status').innerHTML = '<i class="fa fa-times-circle text-danger"></i> Offline';
+    }
+}
+
+function copyNgrokUrl() {
+    const url = document.getElementById('ngrok-url').value;
+    if (url) {
+        navigator.clipboard.writeText(url).then(() => {
+            const btn = document.getElementById('btn-copy');
+            btn.innerHTML = '<i class="fa fa-check"></i> Copiado!';
+            btn.classList.remove('btn-primary');
+            btn.classList.add('btn-success');
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fa fa-copy"></i> Copiar';
+                btn.classList.remove('btn-success');
+                btn.classList.add('btn-primary');
+            }, 2000);
+        });
+    }
+}
+
+checkNgrokUrl();
+checkInterval = setInterval(checkNgrokUrl, 3600000);
+</script>
 
 <div class="dashboard-grid">
     <section class="panel-card">

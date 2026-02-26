@@ -409,7 +409,34 @@ class DashboardCrud extends CrudTemplate {
         admin_set_flash('danger', 'Dashboard nao pode ser excluida');
         admin_redirect('?page=dashboard');
     }
+    
+    public function checkNgrok() {
+        $tunnelFiles = [
+            '/home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/saas/tunnels/superadm.yml',
+            '/home/iluminatto/.cloudflared/config.yml'
+        ];
+        
+        foreach ($tunnelFiles as $file) {
+            if (file_exists($file)) {
+                $content = file_get_contents($file);
+                preg_match('/hostname:\s*(.+)/', $content, $match);
+                if (isset($match[1])) {
+                    $hostname = trim($match[1]);
+                    echo 'https://' . $hostname;
+                    return;
+                }
+            }
+        }
+        
+        echo '';
+    }
 }
 
 $crud = new DashboardCrud();
-echo $crud->get();
+$action = $_GET['action'] ?? 'list';
+
+if ($action === 'check_ngrok') {
+    $crud->checkNgrok();
+} else {
+    echo $crud->get();
+}

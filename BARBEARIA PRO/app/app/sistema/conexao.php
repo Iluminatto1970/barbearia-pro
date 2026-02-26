@@ -125,91 +125,114 @@ function saas_mysql_conectar($banco, $host, $usuario, $senha, &$detalhesErro = '
 }
 
 $http_host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost';
+$request_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '/';
 $host_lookup = saas_normalizar_host($http_host);
 
-$protocolo = 'http';
-if ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['REQUEST_SCHEME']) && $_SERVER['REQUEST_SCHEME'] == 'https')) {
-	$protocolo = 'https';
+$is_super_admin_host = strpos($host_lookup, 'superadm') !== false || strpos($host_lookup, 'superadmin') !== false;
+$is_saas_admin_path = strpos($request_uri, '/saas/admin') !== false;
+
+if ($is_super_admin_host && !$is_saas_admin_path) {
+    header('Location: /sistema/saas/admin/');
+    exit;
 }
 
-$base_path = saas_base_path();
-$url_sistema = $protocolo . '://' . $http_host;
-if ($base_path != '') {
-	$url_sistema .= $base_path;
-}
-$url_sistema = rtrim($url_sistema, '/') . '/';
+if ($is_saas_admin_path) {
+    define('SAAS_ADMIN_APP', true);
+    $saas_servidor = '127.0.0.1';
+    $saas_banco = 'barbearia_saas';
+    $saas_usuario = 'barbearia_app';
+    $saas_senha = '@Vito4747';
+    
+    $pdo_saas = saas_mysql_conectar($saas_banco, $saas_servidor, $saas_usuario, $saas_senha, $erro);
+    if (!$pdo_saas) {
+        $pdo_saas = null;
+    }
+    $pdo = null;
+} else {
+    $protocolo = 'http';
+    if ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['REQUEST_SCHEME']) && $_SERVER['REQUEST_SCHEME'] == 'https')) {
+    	$protocolo = 'https';
+    }
 
-$empresa_id = 0;
-$empresa_nome = 'Tenant Padrao';
-$empresa_slug = 'padrao';
-$empresa_dominio = $host_lookup;
+    $base_path = saas_base_path();
+    $url_sistema = $protocolo . '://' . $http_host;
+    if ($base_path != '') {
+    	$url_sistema .= $base_path;
+    }
+    $url_sistema = rtrim($url_sistema, '/') . '/';
 
-$saas_plano_ctx = saas_plano_contexto_padrao();
-$empresa_plano_id = 0;
-$empresa_plano_nome = $saas_plano_ctx['plano_nome'];
-$empresa_plano_slug = $saas_plano_ctx['plano_slug'];
-$empresa_assinatura_status = $saas_plano_ctx['assinatura_status'];
-$empresa_assinatura_trial_ate = null;
-$empresa_assinatura_ciclo_ate = null;
-$empresa_assinatura_bloqueada = false;
-$empresa_assinatura_motivo = '';
-$saas_plano_recursos = $saas_plano_ctx['recursos'];
+    $empresa_id = 0;
+    $empresa_nome = 'Tenant Padrao';
+    $empresa_slug = 'padrao';
+    $empresa_dominio = $host_lookup;
 
-try {
-	$erro_conexao_saas = '';
-	$pdo_saas = saas_mysql_conectar($saas_banco, $saas_servidor, $saas_usuario, $saas_senha, $erro_conexao_saas);
-	if (!$pdo_saas) {
-		throw new Exception($erro_conexao_saas);
-	}
+    $saas_plano_ctx = saas_plano_contexto_padrao();
+    $empresa_plano_id = 0;
+    $empresa_plano_nome = $saas_plano_ctx['plano_nome'];
+    $empresa_plano_slug = $saas_plano_ctx['plano_slug'];
+    $empresa_assinatura_status = $saas_plano_ctx['assinatura_status'];
+    $empresa_assinatura_trial_ate = null;
+    $empresa_assinatura_ciclo_ate = null;
+    $empresa_assinatura_bloqueada = false;
+    $empresa_assinatura_motivo = '';
+    $saas_plano_recursos = $saas_plano_ctx['recursos'];
 
-	$query_tenant = $pdo_saas->prepare("SELECT e.id, e.nome, e.slug, e.banco, e.db_host, e.db_usuario, e.db_senha, d.dominio
-		FROM empresas e
-		INNER JOIN empresas_dominios d ON d.empresa_id = e.id
-		WHERE e.ativo = 'Sim' AND d.dominio = :dominio
-		ORDER BY d.principal DESC, d.id ASC
-		LIMIT 1");
-	$query_tenant->bindValue(':dominio', $host_lookup);
-	$query_tenant->execute();
-	$empresa = $query_tenant->fetch(PDO::FETCH_ASSOC);
+    try {
+    	$erro_conexao_saas = '';
+    	$pdo_saas = saas_mysql_conectar($saas_banco, $saas_servidor, $saas_usuario, $saas_senha, $erro_conexao_saas);
+    	if (!$pdo_saas) {
+    		throw new Exception($erro_conexao_saas);
+    	}
 
-	if (!$empresa) {
-		$query_tenant = $pdo_saas->query("SELECT e.id, e.nome, e.slug, e.banco, e.db_host, e.db_usuario, e.db_senha,
-			(SELECT dominio FROM empresas_dominios WHERE empresa_id = e.id ORDER BY principal DESC, id ASC LIMIT 1) AS dominio
-			FROM empresas e
-			WHERE e.ativo = 'Sim'
-			ORDER BY e.id ASC
-			LIMIT 1");
-		$empresa = $query_tenant->fetch(PDO::FETCH_ASSOC);
-	}
+    	$query_tenant = $pdo_saas->prepare("SELECT e.id, e.nome, e.slug, e.banco, e.db_host, e.db_usuario, e.db_senha, d.dominio
+    		FROM empresas e
+    		INNER JOIN empresas_dominios d ON d.empresa_id = e.id
+    		WHERE e.ativo = 'Sim' AND d.dominio = :dominio
+    		ORDER BY d.principal DESC, d.id ASC
+    		LIMIT 1");
+    	$query_tenant->bindValue(':dominio', $host_lookup);
+    	$query_tenant->execute();
+    	$empresa = $query_tenant->fetch(PDO::FETCH_ASSOC);
 
-	if ($empresa) {
-		$empresa_id = (int) $empresa['id'];
-		$empresa_nome = $empresa['nome'];
-		$empresa_slug = $empresa['slug'];
-		$empresa_dominio = $empresa['dominio'];
+    	if (!$empresa) {
+    		$query_tenant = $pdo_saas->query("SELECT e.id, e.nome, e.slug, e.banco, e.db_host, e.db_usuario, e.db_senha,
+    			(SELECT dominio FROM empresas_dominios WHERE empresa_id = e.id ORDER BY principal DESC, id ASC LIMIT 1) AS dominio
+    			FROM empresas e
+    			WHERE e.ativo = 'Sim'
+    			ORDER BY e.id ASC
+    			LIMIT 1");
+    		$empresa = $query_tenant->fetch(PDO::FETCH_ASSOC);
+    	}
 
-		$banco = $empresa['banco'];
-		$servidor = $empresa['db_host'];
-		$usuario = $empresa['db_usuario'];
-		$senha = $empresa['db_senha'];
-	}
-} catch (Exception $e) {
-	$pdo_saas = null;
-}
+    	if ($empresa) {
+    		$empresa_id = (int) $empresa['id'];
+    		$empresa_nome = $empresa['nome'];
+    		$empresa_slug = $empresa['slug'];
+    		$empresa_dominio = $empresa['dominio'];
 
-try {
-	$erro_conexao_tenant = '';
-	$pdo = saas_mysql_conectar($banco, $servidor, $usuario, $senha, $erro_conexao_tenant);
-	if (!$pdo) {
-		throw new Exception($erro_conexao_tenant);
-	}
-} catch (Exception $e) {
-	echo 'Nao conectado ao Banco de Dados! <br><br>' . $e;
-	exit();
+    		$banco = $empresa['banco'];
+    		$servidor = $empresa['db_host'];
+    		$usuario = $empresa['db_usuario'];
+    		$senha = $empresa['db_senha'];
+    	}
+    } catch (Exception $e) {
+    	$pdo_saas = null;
+    }
+
+    try {
+    	$erro_conexao_tenant = '';
+    	$pdo = saas_mysql_conectar($banco, $servidor, $usuario, $senha, $erro_conexao_tenant);
+    	if (!$pdo) {
+    		throw new Exception($erro_conexao_tenant);
+    	}
+    } catch (Exception $e) {
+    	echo 'Nao conectado ao Banco de Dados! <br><br>' . $e;
+    	exit();
+    }
 }
 
 if (session_status() == PHP_SESSION_NONE) {
-	@session_start();
+    @session_start();
 }
 
 if ($pdo_saas && $empresa_id > 0) {
@@ -262,33 +285,35 @@ $texto_fidelidade = '';
 $texto_agendamento = 'Selecionar Prestador de Servico';
 $msg_agendamento = 'Sim';
 
-$query = $pdo->query("SELECT * from config");
-$res = $query->fetchAll(PDO::FETCH_ASSOC);
-$total_reg = @count($res);
-if ($total_reg == 0) {
-	$pdo->query("INSERT INTO config SET nome = '$nome_sistema', email = '$email_sistema', telefone_whatsapp = '$whatsapp_sistema', logo = 'logo.png', icone = 'favicon.ico', logo_rel = 'logo_rel.jpg', tipo_rel = 'pdf', tipo_comissao = 'Porcentagem', texto_rodape = 'Edite este texto nas configuracoes do painel administrador', img_banner_index = 'hero-bg.jpg', quantidade_cartoes = 10, texto_agendamento = 'Selecionar Prestador de Servico', msg_agendamento = 'Sim'");
-} else {
-	$nome_sistema = $res[0]['nome'];
-	$email_sistema = $res[0]['email'];
-	$whatsapp_sistema = $res[0]['telefone_whatsapp'];
-	$tipo_rel = $res[0]['tipo_rel'];
-	$telefone_fixo_sistema = $res[0]['telefone_fixo'];
-	$endereco_sistema = $res[0]['endereco'];
-	$logo_rel = $res[0]['logo_rel'];
-	$logo_sistema = $res[0]['logo'];
-	$icone_sistema = $res[0]['icone'];
-	$instagram_sistema = $res[0]['instagram'];
-	$tipo_comissao = $res[0]['tipo_comissao'];
-	$texto_rodape = $res[0]['texto_rodape'];
-	$img_banner_index = $res[0]['img_banner_index'];
-	$icone_site = $res[0]['icone_site'];
-	$texto_sobre = $res[0]['texto_sobre'];
-	$imagem_sobre = $res[0]['imagem_sobre'];
-	$mapa = $res[0]['mapa'];
-	$quantidade_cartoes = $res[0]['quantidade_cartoes'];
-	$texto_fidelidade = $res[0]['texto_fidelidade'];
-	$texto_agendamento = $res[0]['texto_agendamento'];
-	$msg_agendamento = $res[0]['msg_agendamento'];
+if (!defined('SAAS_ADMIN_APP') && $pdo) {
+    $query = $pdo->query("SELECT * from config");
+    $res = $query->fetchAll(PDO::FETCH_ASSOC);
+    $total_reg = @count($res);
+    if ($total_reg == 0) {
+        $pdo->query("INSERT INTO config SET nome = '$nome_sistema', email = '$email_sistema', telefone_whatsapp = '$whatsapp_sistema', logo = 'logo.png', icone = 'favicon.ico', logo_rel = 'logo_rel.jpg', tipo_rel = 'pdf', tipo_comissao = 'Porcentagem', texto_rodape = 'Edite este texto nas configuracoes do painel administrador', img_banner_index = 'hero-bg.jpg', quantidade_cartoes = 10, texto_agendamento = 'Selecionar Prestador de Servico', msg_agendamento = 'Sim'");
+    } else {
+        $nome_sistema = $res[0]['nome'];
+        $email_sistema = $res[0]['email'];
+        $whatsapp_sistema = $res[0]['telefone_whatsapp'];
+        $tipo_rel = $res[0]['tipo_rel'];
+        $telefone_fixo_sistema = $res[0]['telefone_fixo'];
+        $endereco_sistema = $res[0]['endereco'];
+        $logo_rel = $res[0]['logo_rel'];
+        $logo_sistema = $res[0]['logo'];
+        $icone_sistema = $res[0]['icone'];
+        $instagram_sistema = $res[0]['instagram'];
+        $tipo_comissao = $res[0]['tipo_comissao'];
+        $texto_rodape = $res[0]['texto_rodape'];
+        $img_banner_index = $res[0]['img_banner_index'];
+        $icone_site = $res[0]['icone_site'];
+        $texto_sobre = $res[0]['texto_sobre'];
+        $imagem_sobre = $res[0]['imagem_sobre'];
+        $mapa = $res[0]['mapa'];
+        $quantidade_cartoes = $res[0]['quantidade_cartoes'];
+        $texto_fidelidade = $res[0]['texto_fidelidade'];
+        $texto_agendamento = $res[0]['texto_agendamento'];
+        $msg_agendamento = $res[0]['msg_agendamento'];
+    }
 }
 
 $tel_whatsapp = '55' . preg_replace('/[ ()-]+/', '', $whatsapp_sistema);
