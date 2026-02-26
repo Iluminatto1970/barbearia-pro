@@ -6,6 +6,32 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+if (isset($_GET['action']) && $_GET['action'] === 'check_ngrok') {
+    header('Content-Type: text/plain');
+    $context = stream_context_create([
+        'http' => ['timeout' => 3, 'ignore_errors' => true]
+    ]);
+    $response = @file_get_contents('http://localhost:4041/api/tunnels', false, $context);
+    
+    if ($response) {
+        $data = json_decode($response, true);
+        if (isset($data['tunnels'])) {
+            foreach ($data['tunnels'] as $tunnel) {
+                if ($tunnel['name'] === 'ssh') {
+                    $url = $tunnel['public_url'];
+                    preg_match('/tcp:\/\/([^:]+):(\d+)/', $url, $match);
+                    if ($match) {
+                        echo 'ssh iluminatto@' . $match[1] . ' -p ' . $match[2];
+                        exit;
+                    }
+                }
+            }
+        }
+    }
+    echo '';
+    exit;
+}
+
 if (!$pdo_saas instanceof PDO) {
     http_response_code(503);
     ?>

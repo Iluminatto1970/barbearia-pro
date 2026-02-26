@@ -1,26 +1,5 @@
 <?php
 if (!defined('SAAS_ADMIN_APP')) {
-    if (isset($_GET['action']) && $_GET['action'] === 'check_ngrok') {
-        header('Content-Type: text/plain');
-        $tunnelFiles = [
-            __DIR__ . '/../tunnels/superadm.yml',
-            '/home/iluminatto/.cloudflared/config.yml'
-        ];
-        
-        foreach ($tunnelFiles as $file) {
-            if (file_exists($file)) {
-                $content = file_get_contents($file);
-                preg_match('/hostname:\s*(.+)/', $content, $match);
-                if (isset($match[1])) {
-                    $hostname = trim($match[1]);
-                    echo 'https://' . $hostname;
-                    exit;
-                }
-            }
-        }
-        echo '';
-        exit;
-    }
     exit;
 }
 
@@ -305,25 +284,22 @@ function dashboard_badge($ativo, $assinatura)
             <div class="col-md-8">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fa fa-link"></i></span>
+                        <span class="input-group-text"><i class="fa fa-terminal"></i></span>
                     </div>
-                    <input type="text" class="form-control" id="ngrok-url" readonly placeholder="Aguardando conexão...">
+                    <input type="text" class="form-control font-weight-bold text-primary" id="ngrok-url" readonly placeholder="Aguardando conexão...">
                     <div class="input-group-append">
                         <button class="btn btn-primary" onclick="copyNgrokUrl()" id="btn-copy">
                             <i class="fa fa-copy"></i> Copiar
                         </button>
                     </div>
                 </div>
-                <small class="text-muted mt-1 d-block">
-                    <i class="fa fa-info-circle"></i> Comando SSH: <code id="ssh-command">ssh iluminatto@... -p 22</code>
-                </small>
             </div>
             <div class="col-md-4 text-right">
                 <div class="text-muted small" id="last-check">
                     <i class="fa fa-clock"></i> Última verificação: --
                 </div>
                 <div class="text-success small" id="link-status">
-                    <i class="fa fa-check-circle"></i> Link ativo
+                    <i class="fa fa-check-circle"></i> Online
                 </div>
             </div>
         </div>
@@ -342,17 +318,10 @@ async function checkNgrokUrl() {
         });
         const text = await response.text();
         
-        const match = text.match(/(https?:\/\/[a-zA-Z0-9\-\.]+)/);
-        
-        if (match && match[1] !== ngrokUrl) {
-            ngrokUrl = match[1];
+        if (text && text !== ngrokUrl && text.trim() !== '') {
+            ngrokUrl = text.trim();
             document.getElementById('ngrok-url').value = ngrokUrl;
-            document.getElementById('ssh-command').textContent = 'ssh iluminatto@' + ngrokUrl.replace(/https?:\/\//, '') + ' -p 22';
             document.getElementById('link-status').innerHTML = '<i class="fa fa-check-circle text-success"></i> Link atualizado!';
-            
-            if (ngrokUrl) {
-                new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2teleVoYAH+a2teleVoYAH+a2teleVoYAH+a2teleVoYAH+a2teleVoYAH+a2teleVoYAH+a2teleVoYAA==').play().catch(() => {});
-            }
         }
         
         document.getElementById('last-check').innerHTML = '<i class="fa fa-clock"></i> Última verificação: ' + new Date().toLocaleTimeString();
