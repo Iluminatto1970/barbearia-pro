@@ -177,10 +177,7 @@ if ($page === 'logout') {
     exit;
 }
 
-$allowedPages = ['dashboard', 'empresas', 'planos', 'assinaturas', 'tuneis', 'admins'];
-if (!in_array($page, $allowedPages, true)) {
-    $page = 'dashboard';
-}
+$allowedPages = ['dashboard', 'empresas', 'planos', 'assinaturas', 'tuneis', 'admins', 'sistemas'];
 
 $menuCounters = [
     'empresas' => 0,
@@ -188,6 +185,7 @@ $menuCounters = [
     'assinaturas' => 0,
     'tuneis' => 0,
     'admins' => 0,
+    'sistemas' => 0,
 ];
 
 try {
@@ -196,6 +194,7 @@ try {
     $menuCounters['assinaturas'] = (int) $pdo_saas->query("SELECT COUNT(*) FROM empresas_assinaturas WHERE status = 'Trial'")->fetchColumn();
     $menuCounters['tuneis'] = (int) $pdo_saas->query("SELECT COUNT(*) FROM empresas_tunnels")->fetchColumn();
     $menuCounters['admins'] = (int) $pdo_saas->query("SELECT COUNT(*) FROM saas_admins WHERE ativo = 'Sim'")->fetchColumn();
+    $menuCounters['sistemas'] = (int) $pdo_saas->query("SELECT COUNT(*) FROM sistemas WHERE ativo = 'Sim'")->fetchColumn();
 } catch (Exception $e) {
     admin_set_flash('warning', 'Alguns indicadores nao puderam ser carregados.');
 }
@@ -215,6 +214,7 @@ $pageTitle = [
     'assinaturas' => 'Assinaturas',
     'tuneis' => 'Tuneis',
     'admins' => 'Administradores',
+    'sistemas' => 'Sistemas',
 ];
 ?>
 <!DOCTYPE html>
@@ -677,6 +677,10 @@ $pageTitle = [
             <a href="?page=tuneis" class="sidebar-link <?= $page === 'tuneis' ? 'active' : '' ?>">
                 <span class="label"><i class="fa fa-network-wired"></i> Tuneis</span>
                 <span class="sidebar-counter"><?= (int) $menuCounters['tuneis'] ?></span>
+            </a>
+            <a href="?page=sistemas" class="sidebar-link <?= $page === 'sistemas' ? 'active' : '' ?>">
+                <span class="label"><i class="fa fa-layer-group"></i> Sistemas</span>
+                <span class="sidebar-counter"><?= (int) $menuCounters['sistemas'] ?></span>
             </a>
             <a href="?page=admins" class="sidebar-link <?= $page === 'admins' ? 'active' : '' ?>">
                 <span class="label"><i class="fa fa-user-shield"></i> Admins</span>
