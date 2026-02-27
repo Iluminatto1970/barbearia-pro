@@ -281,25 +281,19 @@ function dashboard_badge($ativo, $assinatura)
     </header>
     <div class="box-body p-3">
         <div class="row">
-            <div class="col-md-8">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fa fa-terminal"></i></span>
-                    </div>
-                    <input type="text" class="form-control font-weight-bold text-primary" id="ngrok-url" readonly placeholder="Aguardando conexão...">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" onclick="copyNgrokUrl()" id="btn-copy">
-                            <i class="fa fa-copy"></i> Copiar
-                        </button>
-                    </div>
-                </div>
+            <div class="col-md-12">
+                <textarea class="form-control font-weight-bold" id="ngrok-url" readonly rows="3" placeholder="Aguardando conexão..."></textarea>
             </div>
-            <div class="col-md-4 text-right">
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-6">
+                <button class="btn btn-primary btn-block" onclick="copyNgrokUrl()" id="btn-copy">
+                    <i class="fa fa-copy"></i> Copiar
+                </button>
+            </div>
+            <div class="col-md-6 text-right">
                 <div class="text-muted small" id="last-check">
                     <i class="fa fa-clock"></i> Última verificação: --
-                </div>
-                <div class="text-success small" id="link-status">
-                    <i class="fa fa-check-circle"></i> Online
                 </div>
             </div>
         </div>
@@ -321,7 +315,6 @@ async function checkNgrokUrl() {
         if (text && text !== ngrokUrl && text.trim() !== '') {
             ngrokUrl = text.trim();
             document.getElementById('ngrok-url').value = ngrokUrl;
-            document.getElementById('link-status').innerHTML = '<i class="fa fa-check-circle text-success"></i> Link atualizado!';
         }
         
         document.getElementById('last-check').innerHTML = '<i class="fa fa-clock"></i> Última verificação: ' + new Date().toLocaleTimeString();
@@ -329,7 +322,6 @@ async function checkNgrokUrl() {
         
     } catch (e) {
         document.getElementById('ngrok-status').innerHTML = '<span class="badge bg-danger"><i class="fa fa-exclamation-triangle"></i> Erro</span>';
-        document.getElementById('link-status').innerHTML = '<i class="fa fa-times-circle text-danger"></i> Offline';
     }
 }
 

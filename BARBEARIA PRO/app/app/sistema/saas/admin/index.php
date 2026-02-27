@@ -9,26 +9,40 @@ if (session_status() === PHP_SESSION_NONE) {
 if (isset($_GET['action']) && $_GET['action'] === 'check_ngrok') {
     header('Content-Type: text/plain');
     $context = stream_context_create([
-        'http' => ['timeout' => 3, 'ignore_errors' => true]
+        'http' => ['timeout' => 5, 'ignore_errors' => true]
     ]);
-    $response = @file_get_contents('http://localhost:4041/api/tunnels', false, $context);
+    
+    $output = [];
+    
+    // Local SSH
+    $output[] = "localhost SSH: ssh iluminatto@localhost";
+    $output[] = "localhost SSH (root): ssh root@localhost";
+    
+    // Try ngrok tunnels
+    $ports = [4040, 4041];
+    $response = false;
+    
+    foreach ($ports as $port) {
+        $response = @file_get_contents("http://localhost:$port/api/tunnels", false, $context);
+        if ($response) break;
+    }
     
     if ($response) {
         $data = json_decode($response, true);
         if (isset($data['tunnels'])) {
             foreach ($data['tunnels'] as $tunnel) {
-                if ($tunnel['name'] === 'ssh') {
+                if ($tunnel['proto'] === 'tcp' && $tunnel['config']['addr'] === 'localhost:22') {
                     $url = $tunnel['public_url'];
                     preg_match('/tcp:\/\/([^:]+):(\d+)/', $url, $match);
                     if ($match) {
-                        echo 'ssh iluminatto@' . $match[1] . ' -p ' . $match[2];
-                        exit;
+                        $output[] = 'Ngrok SSH: ssh iluminatto@' . $match[1] . ' -p ' . $match[2];
                     }
                 }
             }
         }
     }
-    echo '';
+    
+    echo implode("\n", $output);
     exit;
 }
 

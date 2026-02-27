@@ -5759,3 +5759,431 @@ Stack trace:
 [Fri Feb 27 04:10:55 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
 [Fri Feb 27 04:10:55 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
 [Fri Feb 27 04:10:55 2026] 127.0.0.1:53178 Closing
+[Fri Feb 27 04:11:29 2026] 127.0.0.1:36766 Accepted
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:11:29 2026] 127.0.0.1:36766 [200]: GET /sistema/saas/admin/index.php?page=dashboard
+[Fri Feb 27 04:11:29 2026] 127.0.0.1:36766 Closing
+[Fri Feb 27 04:11:29 2026] 127.0.0.1:36774 Accepted
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:11:29 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:11:29 2026] 127.0.0.1:36774 [200]: GET /sistema/saas/admin/index.php?page=dashboard&action=check_ngrok
+[Fri Feb 27 04:11:29 2026] 127.0.0.1:36774 Closing
+[Fri Feb 27 04:11:32 2026] 127.0.0.1:36786 Accepted
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:11:32 2026] 127.0.0.1:36786 [200]: GET /sistema/saas/admin/index.php?page=dashboard
+[Fri Feb 27 04:11:32 2026] 127.0.0.1:36786 Closing
+[Fri Feb 27 04:11:32 2026] 127.0.0.1:36800 Accepted
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:11:32 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:11:32 2026] 127.0.0.1:36800 [200]: GET /sistema/saas/admin/index.php?page=dashboard&action=check_ngrok
+[Fri Feb 27 04:11:32 2026] 127.0.0.1:36800 Closing
+[Fri Feb 27 04:13:42 2026] 127.0.0.1:55140 Accepted
+[Fri Feb 27 04:13:42 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:13:42 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:13:42 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:13:42 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:13:42 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:13:42 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:13:42 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:13:42 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:13:42 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:13:42 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:13:42 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:13:42 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:13:42 2026] 127.0.0.1:55140 [200]: GET /sistema/saas/admin/index.php?page=dashboard
+[Fri Feb 27 04:13:42 2026] 127.0.0.1:55140 Closing
+[Fri Feb 27 04:13:43 2026] 127.0.0.1:55142 Accepted
+[Fri Feb 27 04:13:43 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:13:43 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:13:43 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:13:43 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:13:43 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:13:43 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:13:43 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:13:43 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:13:43 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:13:43 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:13:43 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:13:43 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:13:43 2026] 127.0.0.1:55142 [200]: GET /sistema/saas/admin/index.php?page=dashboard&action=check_ngrok
+[Fri Feb 27 04:13:43 2026] 127.0.0.1:55142 Closing
+[Fri Feb 27 04:13:44 2026] 127.0.0.1:47216 Accepted
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:13:44 2026] 127.0.0.1:47216 [200]: GET /sistema/saas/admin/index.php?page=dashboard
+[Fri Feb 27 04:13:44 2026] 127.0.0.1:47216 Closing
+[Fri Feb 27 04:13:44 2026] 127.0.0.1:47218 Accepted
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:13:44 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:13:44 2026] 127.0.0.1:47218 [200]: GET /sistema/saas/admin/index.php?page=dashboard&action=check_ngrok
+[Fri Feb 27 04:13:44 2026] 127.0.0.1:47218 Closing
+[Fri Feb 27 04:13:45 2026] 127.0.0.1:47222 Accepted
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:13:45 2026] 127.0.0.1:47222 [200]: GET /sistema/saas/admin/index.php?page=dashboard
+[Fri Feb 27 04:13:45 2026] 127.0.0.1:47222 Closing
+[Fri Feb 27 04:13:45 2026] 127.0.0.1:47228 Accepted
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:13:45 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:13:45 2026] 127.0.0.1:47228 [200]: GET /sistema/saas/admin/index.php?page=dashboard&action=check_ngrok
+[Fri Feb 27 04:13:45 2026] 127.0.0.1:47228 Closing
+[Fri Feb 27 04:13:46 2026] 127.0.0.1:47240 Accepted
+[Fri Feb 27 04:13:46 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:13:46 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:13:46 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:13:46 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:13:46 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:13:46 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:13:46 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:13:46 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:13:46 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:13:46 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:13:46 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:13:46 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:13:46 2026] 127.0.0.1:47240 [200]: GET /sistema/saas/admin/index.php?page=dashboard
+[Fri Feb 27 04:13:46 2026] 127.0.0.1:47240 Closing
+[Fri Feb 27 04:13:47 2026] 127.0.0.1:47250 Accepted
+[Fri Feb 27 04:13:47 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:13:47 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:13:47 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:13:47 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:13:47 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:13:47 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:13:47 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:13:47 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:13:47 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:13:47 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:13:47 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:13:47 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:13:47 2026] 127.0.0.1:47250 [200]: GET /sistema/saas/admin/index.php?page=dashboard&action=check_ngrok
+[Fri Feb 27 04:13:47 2026] 127.0.0.1:47250 Closing
+[Fri Feb 27 04:13:47 2026] 127.0.0.1:47266 Accepted
+[Fri Feb 27 04:13:47 2026] 127.0.0.1:47266 Closing
+[Fri Feb 27 04:14:37 2026] 127.0.0.1:41234 Accepted
+[Fri Feb 27 04:14:37 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:14:37 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:14:37 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:14:37 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:14:37 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:14:37 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:14:37 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:14:37 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:14:37 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:14:37 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:14:37 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:14:37 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:14:37 2026] 127.0.0.1:41234 Closing
+[Fri Feb 27 04:14:46 2026] 127.0.0.1:45658 Accepted
+[Fri Feb 27 04:14:46 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:14:46 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:14:46 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:14:46 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:14:46 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:14:46 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:14:46 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:14:46 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:14:46 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:14:46 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:14:46 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:14:46 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:14:46 2026] 127.0.0.1:45658 Closing
+[Fri Feb 27 04:14:56 2026] 127.0.0.1:57560 Accepted
+[Fri Feb 27 04:14:56 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:14:56 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:14:56 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:14:56 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:14:56 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:14:56 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:14:56 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:14:56 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:14:56 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:14:56 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:14:56 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:14:56 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:14:56 2026] 127.0.0.1:57560 Closing
+[Fri Feb 27 04:15:04 2026] 127.0.0.1:47022 Accepted
+[Fri Feb 27 04:15:04 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:15:04 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:15:04 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:15:04 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:15:04 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:15:04 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:15:04 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:15:04 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:15:04 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:15:04 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:15:04 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:15:04 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:15:04 2026] 127.0.0.1:47022 Closing
+[Fri Feb 27 04:15:12 2026] 127.0.0.1:47024 Accepted
+[Fri Feb 27 04:15:12 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:15:12 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:15:12 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:15:12 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:15:12 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:15:12 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:15:12 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:15:12 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:15:12 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:15:12 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:15:12 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:15:12 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:15:12 2026] 127.0.0.1:47024 Closing
+[Fri Feb 27 04:19:19 2026] 127.0.0.1:56300 Accepted
+[Fri Feb 27 04:19:19 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:19:19 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:19:19 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:19:19 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:19:19 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:19:19 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:19:19 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:19:19 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:19:19 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:19:19 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:19:19 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:19:19 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:19:19 2026] 127.0.0.1:56300 [200]: GET /sistema/saas/admin/index.php?page=dashboard
+[Fri Feb 27 04:19:19 2026] 127.0.0.1:56300 Closing
+[Fri Feb 27 04:19:20 2026] 127.0.0.1:56304 Accepted
+[Fri Feb 27 04:19:20 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:19:20 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:19:20 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:19:20 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:19:20 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:19:20 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:19:20 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:19:20 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:19:20 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:19:20 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:19:20 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:19:20 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:19:20 2026] 127.0.0.1:56304 [200]: GET /sistema/saas/admin/index.php?page=dashboard&action=check_ngrok
+[Fri Feb 27 04:19:20 2026] 127.0.0.1:56304 Closing
+[Fri Feb 27 04:19:21 2026] 127.0.0.1:56310 Accepted
+[Fri Feb 27 04:19:21 2026] 127.0.0.1:56310 Closing
+[Fri Feb 27 04:20:52 2026] 127.0.0.1:44998 Accepted
+[Fri Feb 27 04:20:52 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:20:52 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:20:52 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:20:52 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:20:52 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:20:52 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:20:52 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:20:52 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:20:52 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:20:52 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:20:52 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:20:52 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:20:52 2026] 127.0.0.1:44998 Closing
+[Fri Feb 27 04:21:39 2026] 127.0.0.1:51444 Accepted
+[Fri Feb 27 04:21:39 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:21:39 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:21:39 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:21:39 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:21:39 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:21:39 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:21:39 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:21:39 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:21:39 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:21:39 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:21:39 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:21:39 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:21:39 2026] 127.0.0.1:51444 Closing
+[Fri Feb 27 04:22:00 2026] 127.0.0.1:37442 Accepted
+[Fri Feb 27 04:22:00 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:22:00 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:22:00 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:22:00 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:22:00 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:22:00 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:22:00 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:22:00 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:22:00 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:22:00 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:22:00 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:22:00 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:22:00 2026] 127.0.0.1:37442 [200]: GET /sistema/saas/admin/index.php?page=dashboard
+[Fri Feb 27 04:22:00 2026] 127.0.0.1:37442 Closing
+[Fri Feb 27 04:22:01 2026] 127.0.0.1:37454 Accepted
+[Fri Feb 27 04:22:01 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:22:01 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:22:01 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:22:01 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:22:01 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:22:01 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:22:01 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:22:01 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:22:01 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:22:01 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:22:01 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:22:01 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:22:01 2026] 127.0.0.1:37454 [200]: GET /sistema/saas/admin/index.php?page=dashboard&action=check_ngrok
+[Fri Feb 27 04:22:01 2026] 127.0.0.1:37454 Closing
+[Fri Feb 27 04:23:35 2026] 127.0.0.1:44846 Accepted
+[Fri Feb 27 04:23:35 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:23:35 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:23:35 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:23:35 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:23:35 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:23:35 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:23:35 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:23:35 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:23:35 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:23:35 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:23:35 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:23:35 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:23:35 2026] 127.0.0.1:44846 Closing
+[Fri Feb 27 04:24:56 2026] 127.0.0.1:40048 Accepted
+[Fri Feb 27 04:24:56 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:24:56 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:24:56 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:24:56 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:24:56 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:24:56 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:24:56 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:24:56 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:24:56 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:24:56 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:24:56 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:24:56 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:24:56 2026] 127.0.0.1:40048 Closing
+[Fri Feb 27 04:25:48 2026] 127.0.0.1:57108 Accepted
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:25:48 2026] 127.0.0.1:57108 [200]: GET /sistema/saas/admin/index.php?page=dashboard
+[Fri Feb 27 04:25:48 2026] 127.0.0.1:57108 Closing
+[Fri Feb 27 04:25:48 2026] 127.0.0.1:57116 Accepted
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:25:48 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:25:48 2026] 127.0.0.1:57116 [200]: GET /sistema/saas/admin/index.php?page=dashboard&action=check_ngrok
+[Fri Feb 27 04:25:48 2026] 127.0.0.1:57116 Closing
+[Fri Feb 27 04:30:20 2026] 127.0.0.1:38866 Accepted
+[Fri Feb 27 04:30:20 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:30:20 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:30:20 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:30:20 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:30:20 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:30:20 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:30:20 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:30:20 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:30:20 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:30:20 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:30:20 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:30:20 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:30:20 2026] 127.0.0.1:38866 Closing
+[Fri Feb 27 04:31:16 2026] 127.0.0.1:47024 Accepted
+[Fri Feb 27 04:31:16 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 238
+[Fri Feb 27 04:31:16 2026] PHP Warning:  Undefined variable $empresa_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 252
+[Fri Feb 27 04:31:16 2026] PHP Warning:  Undefined variable $empresa_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 253
+[Fri Feb 27 04:31:16 2026] PHP Warning:  Undefined variable $empresa_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 254
+[Fri Feb 27 04:31:16 2026] PHP Warning:  Undefined variable $empresa_dominio in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 255
+[Fri Feb 27 04:31:16 2026] PHP Warning:  Undefined variable $empresa_plano_id in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 256
+[Fri Feb 27 04:31:16 2026] PHP Warning:  Undefined variable $empresa_plano_nome in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 257
+[Fri Feb 27 04:31:16 2026] PHP Warning:  Undefined variable $empresa_plano_slug in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 258
+[Fri Feb 27 04:31:16 2026] PHP Warning:  Undefined variable $empresa_assinatura_status in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 259
+[Fri Feb 27 04:31:16 2026] PHP Warning:  Undefined variable $empresa_assinatura_trial_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 260
+[Fri Feb 27 04:31:16 2026] PHP Warning:  Undefined variable $empresa_assinatura_ciclo_ate in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 261
+[Fri Feb 27 04:31:16 2026] PHP Warning:  Undefined variable $empresa_assinatura_bloqueada in /home/iluminatto/Documents/Dev/Barbearia/BARBEARIA PRO/app/app/sistema/conexao.php on line 262
+[Fri Feb 27 04:31:16 2026] 127.0.0.1:47024 Closing
